@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 				transactionManagerRef = "customerTransactionManager", basePackages = {"com.non.repo"})
 public class CustomerConfig {
 
-	@Primary
+	 @Primary
 	@Bean(name = "customerDataSource")
 	@ConfigurationProperties(prefix = "spring.customer.datasource")
 	public DataSource dataSource() {
